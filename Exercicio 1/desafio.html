@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let numero;
+        do {
+            numero = prompt("Digite um número positivo:");
+            // Converte a entrada para um número
+            numero = Number(numero);
+            // Verifica se o número é válido e positivo
+            if (isNaN(numero) || numero <= 0) {
+                alert("Entrada inválida. Por favor, digite um número positivo!");
+            }
+        } while (isNaN(numero) || numero <= 0);
+            if (numero % 2 === 0){
+                alert("par");
+            }else{
+                alert("impar");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
